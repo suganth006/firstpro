@@ -1,0 +1,92 @@
+git <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galary</title>
+    <link rel="stylesheet" href="image.css">
+</head>
+<body>
+    <h1>Image Galary</h1>
+    <button id="toggleButton">Change colour</button>
+    
+    
+
+    <div class="container">
+        <div>
+            <img src="https://picsum.photos/300/300?random=1">
+            <h2 style="text-align: center;">LION</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=2">
+            <h2 style="text-align: center;">Animal 2</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=3">
+            <h2 style="text-align: center;">image 3</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=14">
+            <h2 style="text-align: center;">image 4</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=5">
+            <h2 style="text-align: center;">image 5</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=6">
+            <h2 style="text-align: center;">image 6</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=7">
+            <h2 style="text-align: center;">image 7</h2>
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=8">
+            <h2 style="text-align: center;">image 8</h2>
+            
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=9">
+            <h2 style="text-align: center;">image 9</h2>
+            
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=10">
+            <h2 style="text-align: center;">image 10</h2>
+            
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=11">
+            <h2 style="text-align: center;">image 11</h2>
+            
+        </div>
+        <div>
+            <img src="https://picsum.photos/300/300?random=12">
+            <h2 style="text-align: center;">image 12</h2>
+            
+        </div>
+      
+      
+        
+
+    </div>
+   
+    <script>
+        let isDefaultColor = true;
+
+        document.getElementById('toggleButton').addEventListener('click', function() {
+        if (isDefaultColor) {
+             document.body.style.backgroundColor = "black";;
+             document.body.style.color = "white";
+             document.querySelector('h1').style.color = "white"; // New color
+        } else {
+            document.body.style.backgroundColor = 'white';
+            document.body.style.color = "black";
+            document.querySelector('h1').style.color = "black"; // Default color
+        }
+            isDefaultColor = !isDefaultColor; // Toggle the state
+        });
+    </script>
+</body>
+</html>
